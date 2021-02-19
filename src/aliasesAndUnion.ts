@@ -22,3 +22,25 @@ function renderPlataform(plataform : Plataform){
     return plataform;
 };
 renderPlataform('Linux');
+
+
+
+// with intersection
+type Person = {
+    name: string,
+    age: number
+};
+
+type Pet = {
+    petName: string,
+    petColor: string
+};
+
+type UserInfo = Person & Pet ;
+
+const leandro : UserInfo = {
+    name: 'leandro',
+    age: 22,
+    petName: 'snoop',
+    petColor: 'white and black'
+};
